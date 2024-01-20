@@ -1,0 +1,87 @@
+
+/* HEADER*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A nicer, more readable font */
+}
+
+header {
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* Changing text color to black for better contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-buttons button {
+    background-color: transparent; /* Transparent background */
+    color: black; /* Button text color */
+    border: 2px solid black; /* Adding a border to the buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: black; /* Button hover background */
+    color: white; /* Button hover text color */
+    border-color: white; /* Button hover border color */
+}
+
+
+
+.auth-container {
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+input[type="email"], input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.auth-buttons button {
+    width: 85%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+.auth-buttons button:hover {
+    background-color: #45a049;
+}

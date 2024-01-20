@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Food Connect - Auth</title>
+        <link rel="stylesheet" href="./userAuth.css">
+        <link rel="stylesheet" href="homePage.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo-container">
+                <span class="company-name">FoodConnect</span>
+            </div>
+            <nav class="nav-buttons">
+                <button onclick="navigateTo('userAuth')">Home</button>
+                <button onclick="navigateTo('about')">About</button>
+                <button onclick="navigateTo('services')">Services</button>
+                <button onclick="openPage('auth/userAuth.html')">Account</button>
+            </nav>
+        </header>
+       
+        <div class="auth-container">
+            <h1>Welcome to FoodConnect!</h1>
+            <h2>Signup Here</h2>
+            <input type="email" id="email_field" placeholder="Email">
+            <input type="password" id="password_field" placeholder="Password">
+            <nav class="auth-buttons">
+                <button onclick="login()">Login</button>
+                <button onclick="createAccount()">Create Account</button>
+            </nav>
+           
+        </div>
+        
+    </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+    <script src="userAuth.js"></script>
+
+</html>
