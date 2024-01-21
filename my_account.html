@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta viewport="width=device-width, initial-scale=1.0">
+        <title>My Account</title>
+        <link rel="stylesheet" href="my_account.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo-container">
+                <span class="company-name">FoodConnect</span>
+            </div>
+            <nav class="nav-buttons">
+                <a href="../homepage.html">
+                    <button>Home</button>
+                </a>  
+                <a href="community/community.html">
+                    <button>Community</button>              
+                </a>
+                <a href="auth/userAuth.html">
+                    <button>Register</button>              
+                </a>
+                <a href="my_account.html">
+                    <button>My Account</button>              
+                </a>
+            </nav>
+        </header>
+
+        <div class="signup-container-parent">
+            <div class="signup-container">
+                <h1>Sign In</h1>
+                <input type="email" id="emailInput" placeholder="Email">
+                <input type="password" id="passwordInput" placeholder="Password">
+                <button onclick="signIn()">Sign In</button>
+            </div>
+        </div>
+
+
+        <div class="account-container">
+
+            <div class="user-details">
+
+                <!-- User detail fields will be populated here -->
+
+            </div>
+        </div>
+
+        <div id="content"></div>
+
+        <button id="logoutButton" onclick="logOut()">Log Out</button>
+
+        
+    </body>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
+    <script src="my_account.js"></script>
+
+
+</html>

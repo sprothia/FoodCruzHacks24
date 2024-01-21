@@ -85,3 +85,27 @@ input[type="email"], input[type="password"] {
 .auth-buttons button:hover {
     background-color: #45a049;
 }
+
+
+#additional_info {
+    width: 90%; /* Makes the textarea wider */
+    max-width: 100%; /* Ensures it doesn't overflow its container */
+    height: auto; /* Adjusts height automatically */
+    min-height: 150px; /* Minimum height */
+    padding: 15px; /* More padding for better text spacing */
+    margin: 10px auto; /* Centers the textarea */
+    border: 1px solid #ccc; /* Border styling */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* 3D effect */
+    font-size: 1em; /* Font size */
+    line-height: 1.5; /* Line height for better readability */
+    resize: vertical; /* Allows vertical resize only */
+}
+
+/* Style adjustments for the label */
+label[for="additional_info"] {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+

@@ -1,0 +1,147 @@
+/* HEADER*/
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* A nicer, more readable font */
+}
+
+header {
+    background-color: #ADD8E6; /* Light blue background */
+    color: black; /* Changing text color to black for better contrast */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#foodBankTitle {
+    text-align: center;
+    font-size: 3em; /* Adjust the size as needed */
+    color: #2a4d69; /* A darker shade of blue */
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15); /* Subtle 3D effect */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold; /* Makes the text bold */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-buttons button {
+    background-color: transparent; /* Transparent background */
+    color: black; /* Button text color */
+    border: 2px solid black; /* Adding a border to the buttons */
+    border-radius: 5px; /* Rounded corners for buttons */
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.nav-buttons button:hover {
+    background-color: black; /* Button hover background */
+    color: white; /* Button hover text color */
+    border-color: white; /* Button hover border color */
+}
+
+#loginContainer {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+
+}
+
+#loginContainer h1 {
+    margin-bottom: 20px;
+}
+
+#loginContainer input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    
+}
+
+#loginContainer button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#loginContainer button:hover {
+    background-color: #0056b3;
+}
+
+button#logoutButton {
+    padding: 10px 15px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 20px;
+}
+
+button#logoutButton:hover {
+    background-color: #cc0000;
+}
+
+.signup-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+}
+
+.signup-container input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.signup-container button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.signup-container button:hover {
+    background-color: #0056b3;
+}
+
+.signup-container-parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}

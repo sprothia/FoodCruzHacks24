@@ -9,25 +9,77 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>FoodConnect</title>
     <link rel="stylesheet" href="./homepage.css">
-
+    <script src="https://kit.fontawesome.com/27af4d7a18.js" crossorigin="anonymous"></script>
+    <script>
+      function toggleFilterPopup() {
+        var popup = document.getElementById('filterPopup');
+        popup.style.display = (popup.style.display === 'block') ? 'none' : 'block';
+      }
+      function applyFilters() {
+        var checkboxes = document.querySelectorAll('.filter-popup input[type="checkbox"]:checked');
+        var selectedFilters = Array.from(checkboxes).map(checkbox => checkbox.value);
+        console.log('Selected filters:', selectedFilters);
+        toggleFilterPopup();
+      }
+    </script>
   </head>
 
   
   <body>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB4t_N1ueAVjozShk8D7TSPiOsvIF5uXfY&callback=initMap&libraries=visualization"></script>
 
     <header>
         <div class="logo-container">
             <span class="company-name">FoodConnect</span>
         </div>
         <nav class="nav-buttons">
-            <button onclick="navigateTo('userAuth')">Home</button>
-            <button onclick="navigateTo('about')">About</button>
-            <button onclick="navigateTo('services')">Services</button>
-            <button onclick="openPage('auth/userAuth.html')">Account</button>
+            <a href="../homepage.html">
+                <button>Home</button>
+            </a>  
+            <a href="community/community.html">
+                <button>Community</button>              
+            </a>
+            <a href="auth/userAuth.html">
+                <button>Register</button>              
+            </a>
+            <a href="my_account.html">
+                <button>My Account</button>              
+            </a>
         </nav>
     </header>
-    
-    
+
+    <div style="width: 100%;">
+      <div style="width: 50%; height: 80px; float: left; background: green;"> 
+        <h1>Participating Restaurants</h1>
+        <div>
+          <button onclick="console.log('all restaurants')" class="filter-button">All</button>
+          <button onclick="console.log('local restaurants only')" class="filter-button">Local Restaurants</button>
+          <button onclick="console.log('chains only')" class="filter-button">Chains</button>
+          <div class="filter-dropdown", style="float:right;">
+            <button class="filter-dropdown-btn" onclick="toggleFilterPopup()"><i class="fa-solid fa-filter"></i></button>
+            <div class="filter-popup" id="filterPopup", >
+              <label><input type="checkbox" value="option1"> 5 Miles</label>
+              <label><input type="checkbox" value="option2"> 15 Miles</label>
+              <label><input type="checkbox" value="option3"> 25 Miles</label>
+              <button onclick="applyFilters()">Apply</button>
+            </div>
+          </div>
+        </div>
+        <div id="scrollable-restaurants">
+        </div>
+        
+      </div>
+      <div style="margin-left: 50%; width: 100; height: 725px; background: blue;" id="map"></div>   
+    </div>
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
 	<script src="homepage.js"></script>
     
   </body>

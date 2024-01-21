@@ -17,23 +17,49 @@
                 <span class="company-name">FoodConnect</span>
             </div>
             <nav class="nav-buttons">
-                <button onclick="navigateTo('userAuth')">Home</button>
-                <button onclick="navigateTo('about')">About</button>
-                <button onclick="navigateTo('services')">Services</button>
-                <button onclick="openPage('auth/userAuth.html')">Account</button>
+                <a href="../homepage.html">
+                    <button>Home</button>
+                </a>  
+                <a href="community/community.html">
+                    <button>Community</button>              
+                </a>
+                <a href="auth/userAuth.html">
+                    <button>Register</button>              
+                </a>
+                <a href="../my_account.html">
+                    <button>My Account</button>              
+                </a>
             </nav>
         </header>
        
         <div class="auth-container">
+
             <h1>Welcome to FoodConnect!</h1>
-            <h2>Signup Here</h2>
+            <h4>Signup as a Food Bank</h4>
             <input type="email" id="email_field" placeholder="Email">
             <input type="password" id="password_field" placeholder="Password">
+            <input type="email" id="phone_field" placeholder="Phone Number">
+            <input type="email" id="name_field" placeholder="Name of Food Bank">
+            <input type="email" id="address_field" placeholder="Address of Food Bank">
+            <input type="email" id="services_field" placeholder="Services Offered Ex: Food Distribution, Emergency Food Assistance">
+            <input type="email" id="hours_field" placeholder="Hours Open">
+            <input type="email" id="affiliation_field" placeholder="Affiliation with Organzation if Applicable">
+            <input type="email" id="capacity_field" placeholder="Max Capacity of Food Allowed Per Night">
+
+            <div class="additional-info">
+                <label for="additional_info">Enter Any Additional Information:</label>
+                <textarea id="additional_info_field" rows="4" placeholder="Ex: Types of Food Accepted, Storage Facilities, Volume Capacity, Delivery Options, Community Impact, etc...."></textarea>
+            </div>
+
             <nav class="auth-buttons">
-                <button onclick="login()">Login</button>
                 <button onclick="createAccount()">Create Account</button>
             </nav>
+
            
+        </div>
+
+
+        <div id="additionalInfoContainer">
         </div>
         
     </body>
@@ -41,6 +67,9 @@
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+
 
     <script src="userAuth.js"></script>
 

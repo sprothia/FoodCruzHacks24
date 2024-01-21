@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FoodConnect - Community</title>
+  <link rel="stylesheet" href="./community.css"> <!-- Include your community-specific CSS file -->
+  <script src="https://kit.fontawesome.com/27af4d7a18.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<header>
+  <div class="logo-container">
+    <span class="company-name">FoodConnect</span>
+  </div>
+  <nav class="nav-buttons">
+    <a href="../homepage.html">
+      <button>Home</button>
+    </a>
+    <a href="#">
+      <button class="active">Community</button>
+    </a>
+    <a href="auth/userAuth.html">
+      <button>Register</button>
+    </a>
+    <a href="my_account.html">
+      <button>My Account</button>
+    </a>
+  </nav>
+</header>
+
+<div class="community-container">
+  <h1>Community Forum</h1>
+  <div class="user-profile">
+    <img src="user_avatar.jpg" alt="User Avatar">
+    <div class="user-details">
+      <h2>John Doe</h2>
+      <p>Joined on: January 1, 2024</p>
+      <button>Edit Profile</button>
+    </div>
+  </div>
+
+  <!-- Community Posts -->
+  <div class="community-posts">
+    <div class="community-post">
+      <h3>Topic 1</h3>
+      <p>This is the content of the first community post.</p>
+      <div class="post-meta">
+        <span class="author">Posted by: John Doe</span>
+        <span class="date">Posted on: January 1, 2024</span>
+      </div>
+      <div class="comments">
+        <div class="comment">
+          <span class="comment-author">Comment by: Jane Doe</span>
+          <p>This is a comment on the first post.</p>
+        </div>
+        <!-- Add more comments as needed -->
+      </div>
+      <form class="comment-form">
+        <label for="commentContent">Add a Comment:</label>
+        <textarea id="commentContent" name="commentContent" required></textarea>
+        <button type="submit">Submit Comment</button>
+      </form>
+    </div>
+
+  </div>
+  <div class="community-post-form">
+    <h2>Create a New Post</h2>
+    <form>
+      <label for="postTitle">Title:</label>
+      <input type="text" id="postTitle" name="postTitle" required>
+      <label for="postContent">Content:</label>
+      <textarea id="postContent" name="postContent" required></textarea>
+      <button type="submit">Submit Post</button>
+    </form>
+  </div>
+</div>
+
+<script src="community.js"></script>
+
+</body>
+</html>

@@ -52,3 +52,43 @@ header {
     color: white; /* Button hover text color */
     border-color: white; /* Button hover border color */
 }
+
+.filter-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #4cb6fc; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 0cap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+    transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #2980b9; /* Change the color on hover */
+}
+
+.restaurant-button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin-left: 10%;
+    width:80%; 
+    height:195px; 
+    background:rgb(157, 153, 153);
+    background-color: 'light-gray'; /* Set your desired background color */
+    color: #fff; /* Set your desired text color */
+    text-align: left;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 20px;
+    border: 0cap;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the shadow as needed */
+    transition: background-color 0.3s ease;
+}
+
+.restaurant-button:hover {
+    background-color: #2980b9; /* Change the color on hover */
+}
